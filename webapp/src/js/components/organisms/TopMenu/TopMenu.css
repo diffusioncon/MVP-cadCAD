@@ -1,0 +1,24 @@
+.topMenu {
+  height: 80px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-nav a.nav-link {
+  color: #69707f;
+  font-weight: 400;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .navbar-nav a.nav-link:hover {
+  color: #2e384d;
+}
+
+.navbar .navbar-nav a.nav-link.active-nav-link {
+  color: #38bb8d;
+  border-color: #38bb8d;
+}

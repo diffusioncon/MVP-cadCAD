@@ -1,0 +1,27 @@
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(46, 91, 255, 0.08);
+  border-radius: 1px;
+  box-shadow: 0 10px 20px 0 rgba(46, 91, 255, 0.07);
+  padding: 35px;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  color: #2e384d;
+}
+.card .card-title span {
+  margin-left: 10px;
+  color: #2e384d;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 10px;
+}
+a .card:hover .card-title span {
+  color: #38bb8d;
+  border-color: #38bb8d;
+  text-decoration: none;
+}
+.card h1 {
+  font-size: 48px;
+}
+a:link {
+  text-decoration: none;
+}

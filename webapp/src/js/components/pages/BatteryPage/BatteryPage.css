@@ -1,0 +1,19 @@
+body {
+  background-color: #f4f6fc;
+  font-family: Rubik;
+  color: #2e384d;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.gauge-container {
+  max-width: 220px;
+  margin: 0 -20px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 130px;
+  overflow: hidden;
+}

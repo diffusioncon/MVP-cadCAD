@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chainlink": "^0.7.5",
+    "openzeppelin-solidity": "^2.3.0"
+  }
+}

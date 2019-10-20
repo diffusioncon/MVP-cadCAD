@@ -8,7 +8,7 @@
   margin-bottom: 1.5rem;
   color: #2e384d;
 }
-.card .card-title span {
+.card .card-title span.card-title-text {
   margin-left: 10px;
   color: #8798ad;
   font-weight: bold;

@@ -29,7 +29,7 @@ export default class CardComponent extends Component {
               {!!titleIcon && (
                 <img src={titleIcon} height="50" alt="placeholder" />
               )}
-              {!!titleText && <span>{titleText}</span>}
+              {!!titleText && <span className="card-title-text">{titleText}</span>}
             </span>
             {!!titleRight && (
               <span style={{ float: "right" }}>{titleRight}</span>

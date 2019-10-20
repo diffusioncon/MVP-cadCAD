@@ -172,7 +172,7 @@ class ProductionPage extends React.Component {
                 <Line
                   type="monotone"
                   dataKey="Production over time"
-                  stroke="#82ca9d"
+                  stroke="#429798"
                 />
               </LineChart>
             </ResponsiveContainer>

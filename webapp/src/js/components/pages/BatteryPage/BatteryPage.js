@@ -136,7 +136,7 @@ class BatteryPage extends React.Component {
             <Tooltip />
             <Legend />
             <ReferenceLine y={100} label="Battery capacity" stroke="#8884d8" />
-            <Line type="monotone" dataKey="Battery level" stroke="#82ca9d" />
+            <Line type="monotone" dataKey="Battery level" stroke="#429798" />
           </LineChart>
         </ResponsiveContainer>
       </div>

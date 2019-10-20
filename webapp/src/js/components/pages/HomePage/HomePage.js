@@ -201,7 +201,7 @@ class HomePage extends React.Component {
             <Line
               type="monotone"
               dataKey="Electricity price"
-              stroke="#82ca9d"
+              stroke="#429798"
             />
           </LineChart>
         </ResponsiveContainer>

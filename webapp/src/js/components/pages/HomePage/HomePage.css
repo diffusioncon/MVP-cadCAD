@@ -35,3 +35,12 @@ input[type="color"]:focus,
 .uneditable-input:focus {
   box-shadow: none;
 }
+.btn-primary {
+  background-color: #429798;
+  border-color: #429798;
+}
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #347071;
+  border-color: #347071;
+}

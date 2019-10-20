@@ -12,13 +12,15 @@ export default class CardComponent extends Component {
       children,
       noPadding,
       noMargin,
-      className
+      className,
+      style = {}
     } = this.props;
     return (
       <Card
         className={`${noPadding ? "p-0" : ""} ${
           noMargin ? "m-0" : ""
         } ${className}`}
+        style={style}
       >
         {!!titleIcon || !!titleText ? (
           <div className="card-title">

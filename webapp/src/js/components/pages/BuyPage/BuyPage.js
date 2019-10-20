@@ -59,6 +59,105 @@ class BuyPage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Buy electricity</h1>
+        {/* <Row>
+          <Col>
+            <CardComponent
+              className="d-flex"
+              style={{ justifyContent: "space-evenly" }}
+            >
+              <Form.Group controlId="amount">
+                <Form.Label>Electricity amount</Form.Label>
+                <InputGroup>
+                  <Form.Control
+                    autoComplete="off"
+                    type="number"
+                    onChange={this.handleChange}
+                    placeholder="Please enter the electricity amount in KW"
+                  />
+                  <InputGroup.Append
+                    style={{
+                      borderRadius: "0 .25rem .25rem 0",
+                      border: "1px solid #ced4da"
+                    }}
+                  >
+                    <InputGroup.Text>KW</InputGroup.Text>
+                  </InputGroup.Append>
+                </InputGroup>
+              </Form.Group>
+              <Form.Group controlId="coin">
+                <Form.Label>Coin</Form.Label>
+                <Form.Control
+                  as="select"
+                  defaultValue={this.state.coin}
+                  placeholder="Type"
+                  onChange={this.onCoinPick.bind(this)}
+                >
+                  <option value="" disabled>
+                    Please select a coin
+                  </option>
+                  {Object.keys(allCoins).map(key => {
+                    console.log(allCoins);
+
+                    const coin = allCoins[key];
+                    return (
+                      <option key={coin.value} value={coin.value}>
+                        {`${coin.name} - ${coin.value}`}
+                      </option>
+                    );
+                  })}
+                </Form.Control>
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Amount to send</Form.Label>
+                <InputGroup>
+                  <Form.Control disabled value={amount * selectedCoin.price} />
+                  {!!this.state.coin ? (
+                    <InputGroup.Append
+                      style={{
+                        borderRadius: "0 .25rem .25rem 0",
+                        border: "1px solid #ced4da"
+                      }}
+                    >
+                      <InputGroup.Text>{this.state.coin}</InputGroup.Text>
+                    </InputGroup.Append>
+                  ) : null}
+                </InputGroup>
+              </Form.Group>
+            </CardComponent>
+          </Col>
+
+          <Col>
+            <CardComponent>
+              {!!selectedCoin.value ? (
+                <>
+                  <div style={{ width: 200 }} className="m-auto">
+                    <QRCode
+                      bgColor="#FFFFFF"
+                      fgColor="#000000"
+                      level="Q"
+                      value={selectedCoin.address}
+                    />
+                  </div>
+                  <p className="m-0 text-center">{selectedCoin.address}</p>
+                </>
+              ) : (
+                <>
+                  <div style={{ width: 200 }} className="m-auto">
+                    <img
+                      style={{ width: "100%" }}
+                      src={require("../../../../assets/images/qr-code-placeholder.png")}
+                      alt="qr code placeholder"
+                    />
+                  </div>
+                  <p className="m-0 text-center">
+                    Please select a coin to generate the QR code
+                  </p>
+                </>
+              )}
+            </CardComponent>
+          </Col>
+        </Row>
+        <br /> */}
         <CardComponent>
           <Row>
             <Col>

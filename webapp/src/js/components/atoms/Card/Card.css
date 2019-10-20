@@ -17,8 +17,8 @@
   text-transform: uppercase;
 }
 a .card:hover .card-title span {
-  color: #38bb8d;
-  border-color: #38bb8d;
+  color: #429798;
+  border-color: #429798;
   text-decoration: none;
 }
 .card h1 {

@@ -195,15 +195,9 @@ class HomePage extends React.Component {
           <LineChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
-            <YAxis />
+            <YAxis unit="$" />
             <Tooltip />
             <Legend />
-            {/* <Line
-              type="monotone"
-              dataKey="Average electricity price"
-              stroke="#8884d8"
-              activeDot={{ r: 8 }}
-            /> */}
             <Line
               type="monotone"
               dataKey="Electricity price"
@@ -221,7 +215,10 @@ class HomePage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Homepage</h1>
-        <CardComponent titleText="Price of the kWh (last 24 hours)" className="pb-3">
+        <CardComponent
+          titleText="Price of the kWh (last 24 hours)"
+          className="pb-3"
+        >
           <ConsumptionChart />
         </CardComponent>
         <Row>

@@ -9,6 +9,7 @@ export default class CardComponent extends Component {
     const {
       titleIcon,
       titleText,
+      titleRight,
       children,
       noPadding,
       noMargin,
@@ -24,10 +25,15 @@ export default class CardComponent extends Component {
       >
         {!!titleIcon || !!titleText ? (
           <div className="card-title">
-            {!!titleIcon && (
-              <img src={titleIcon} height="50" alt="placeholder" />
+            <span>
+              {!!titleIcon && (
+                <img src={titleIcon} height="50" alt="placeholder" />
+              )}
+              {!!titleText && <span>{titleText}</span>}
+            </span>
+            {!!titleRight && (
+              <span style={{ float: "right" }}>{titleRight}</span>
             )}
-            {!!titleText && <span>{titleText}</span>}
           </div>
         ) : null}
         {children}

@@ -6,13 +6,28 @@ import "./Card.css";
 
 export default class CardComponent extends Component {
   renderCard = () => {
-    const { titleIcon, titleText, children } = this.props;
+    const {
+      titleIcon,
+      titleText,
+      children,
+      noPadding,
+      noMargin,
+      className
+    } = this.props;
     return (
-      <Card>
-        <div className="card-title">
-          {!!titleIcon && <img src={titleIcon} height="50" alt="placeholder" />}
-          {!!titleText && <span>{titleText}</span>}
-        </div>
+      <Card
+        className={`${noPadding ? "p-0" : ""} ${
+          noMargin ? "m-0" : ""
+        } ${className}`}
+      >
+        {!!titleIcon && !!titleText ? (
+          <div className="card-title">
+            {!!titleIcon && (
+              <img src={titleIcon} height="50" alt="placeholder" />
+            )}
+            {!!titleText && <span>{titleText}</span>}
+          </div>
+        ) : null}
         {children}
       </Card>
     );

@@ -52,12 +52,12 @@ class TopMenu extends Component {
                 <Link className={this.getClassNames("/buy")} to="/buy">
                   Buy
                 </Link>
-                {/* <Link
+                <Link
                   className={this.getClassNames("/donators")}
                   to="/donators"
                 >
                   Donators
-                </Link> */}
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

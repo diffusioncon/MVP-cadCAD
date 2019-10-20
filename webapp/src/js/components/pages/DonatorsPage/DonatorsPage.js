@@ -6,139 +6,44 @@ import RegularLayout from "../../layouts/RegularLayout/RegularLayout";
 
 import "./DonatorsPage.css";
 import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
+  PieChart,
+  Pie,
   Legend,
-  ResponsiveContainer
+  Tooltip,
+  ResponsiveContainer,
+  Cell
 } from "recharts";
 import CardComponent from "../../atoms/Card/Card";
+import { Row, Col } from "react-bootstrap";
 
-const chartData = [
+const allDonators = [
   {
-    name: "0h",
-    "Battery level": 25,
-    "Max battery capacity": 100
+    name: "Stefan Bürscher",
+    company: "MVP Workshop",
+    create_at: "OCT 15, 2019",
+    invested: 150000
   },
   {
-    name: "1h",
-    "Battery level": 27,
-    "Max battery capacity": 100
+    name: "Filip Petrović",
+    company: "MVP Workshop",
+    create_at: "OCT 18, 2019",
+    invested: 100000
   },
   {
-    name: "2h",
-    "Battery level": 29,
-    "Max battery capacity": 100
+    name: "Milan Pajović",
+    company: "MVP Workshop",
+    create_at: "OCT 19, 2019",
+    invested: 125000
   },
   {
-    name: "3h",
-    "Battery level": 30,
-    "Max battery capacity": 100
-  },
-  {
-    name: "4h",
-    "Battery level": 33,
-    "Max battery capacity": 100
-  },
-  {
-    name: "5h",
-    "Battery level": 37,
-    "Max battery capacity": 100
-  },
-  {
-    name: "6h",
-    "Battery level": 39,
-    "Max battery capacity": 100
-  },
-  {
-    name: "7h",
-    "Battery level": 40,
-    "Max battery capacity": 100
-  },
-  {
-    name: "8h",
-    "Battery level": 45,
-    "Max battery capacity": 100
-  },
-  {
-    name: "9h",
-    "Battery level": 50,
-    "Max battery capacity": 100
-  },
-  {
-    name: "10h",
-    "Battery level": 65,
-    "Max battery capacity": 100
-  },
-  {
-    name: "11h",
-    "Battery level": 78,
-    "Max battery capacity": 100
-  },
-  {
-    name: "12h",
-    "Battery level": 87,
-    "Max battery capacity": 100
-  },
-  {
-    name: "13h",
-    "Battery level": 100,
-    "Max battery capacity": 100
-  },
-  {
-    name: "14h",
-    "Battery level": 100,
-    "Max battery capacity": 100
-  },
-  {
-    name: "15h",
-    "Battery level": 100,
-    "Max battery capacity": 100
-  },
-  {
-    name: "16h",
-    "Battery level": 95,
-    "Max battery capacity": 100
-  },
-  {
-    name: "17h",
-    "Battery level": 80,
-    "Max battery capacity": 100
-  },
-  {
-    name: "18h",
-    "Battery level": 75,
-    "Max battery capacity": 100
-  },
-  {
-    name: "19h",
-    "Battery level": 60,
-    "Max battery capacity": 100
-  },
-  {
-    name: "20h",
-    "Battery level": 60,
-    "Max battery capacity": 100
-  },
-  {
-    name: "21h",
-    "Battery level": 55,
-    "Max battery capacity": 100
-  },
-  {
-    name: "22h",
-    "Battery level": 50,
-    "Max battery capacity": 100
-  },
-  {
-    name: "23h",
-    "Battery level": 30,
-    "Max battery capacity": 100
+    name: "Miloš Novitović",
+    company: "MVP Workshop",
+    create_at: "OCT 19, 2019",
+    invested: 125000
   }
 ];
+
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 class DonatorsPage extends React.Component {
   constructor(props) {
@@ -148,38 +53,63 @@ class DonatorsPage extends React.Component {
     };
   }
 
-  renderConsumptionChart = () => {
-    return (
-      <div style={{ width: "100%", height: 300 }}>
-        <ResponsiveContainer>
-          <LineChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey="Max battery capacity"
-              stroke="#8884d8"
-              activeDot={{ r: 8 }}
-            />
-            <Line type="monotone" dataKey="Battery level" stroke="#82ca9d" />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-    );
-  };
+  renderDonators = () =>
+    allDonators.map(({ name, company, create_at, invested }) => (
+      <CardComponent noPadding noMargin className="mb-2 shadow-none">
+        <Row className="mx-3 my-4">
+          <Col>
+            <strong>{name}</strong>
+          </Col>
+          <Col>{company}</Col>
+          <Col>{create_at}</Col>
+          <Col>${invested}</Col>
+        </Row>
+      </CardComponent>
+    ));
 
   render() {
-    const ConsumptionChart = this.renderConsumptionChart;
+    const DonatorsList = this.renderDonators;
 
     return (
       <RegularLayout>
-        <h1 className="mb-4">Battery level</h1>
+        <h1 className="mb-4">Donators</h1>
         <CardComponent>
-          <ConsumptionChart />
+          <div style={{ width: "100%", height: 300 }}>
+            <ResponsiveContainer>
+              <PieChart>
+                <Pie
+                  dataKey="invested"
+                  isAnimationActive={false}
+                  data={allDonators}
+                  fill="#38bb8d"
+                  label
+                >
+                  {allDonators.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={COLORS[index % COLORS.length]}
+                    />
+                  ))}
+                </Pie>
+                <Legend />
+                <Tooltip />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
         </CardComponent>
+        <br />
+        <br />
+        <h1 className="mb-4">Donators ({allDonators.length})</h1>
+        <Row
+          className="mx-3 mb-2"
+          style={{ color: "rgb(151, 154, 160)", fontWeight: "bold" }}
+        >
+          <Col>Name</Col>
+          <Col>Company</Col>
+          <Col>Donator since</Col>
+          <Col>Donate amount</Col>
+        </Row>
+        <DonatorsList />
       </RegularLayout>
     );
   }

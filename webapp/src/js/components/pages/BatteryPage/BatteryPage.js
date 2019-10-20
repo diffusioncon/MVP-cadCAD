@@ -177,7 +177,7 @@ class BatteryPage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Battery level</h1>
-        <CardComponent>
+        <CardComponent titleText="Battery level percentage" className="pb-3">
           <ConsumptionChart />
         </CardComponent>
       </RegularLayout>

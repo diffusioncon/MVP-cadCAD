@@ -31,7 +31,12 @@ class HeatMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: "400px", width: "100%" }}>
+      <div
+        style={{
+          height: "400px",
+          width: "100%"
+        }}
+      >
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyByaL2JekW-uKMcHKTGJGVB3V7Zd6NfAKg" }}
           defaultCenter={this.props.center}

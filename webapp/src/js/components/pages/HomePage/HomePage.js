@@ -23,123 +23,123 @@ import CardComponent from "../../atoms/Card/Card";
 const chartData = [
   {
     name: "0h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Electricity price": 0.07,
+    "Average electricity price": 0.1
   },
   {
     name: "1h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Electricity price": 0.07,
+    "Average electricity price": 0.1
   },
   {
     name: "2h",
-    "Energy price": 0.08,
-    "Average energy price": 0.1
+    "Electricity price": 0.08,
+    "Average electricity price": 0.1
   },
   {
     name: "3h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "4h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Electricity price": 0.13,
+    "Average electricity price": 0.1
   },
   {
     name: "5h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "6h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Electricity price": 0.09,
+    "Average electricity price": 0.1
   },
   {
     name: "7h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Electricity price": 0.07,
+    "Average electricity price": 0.1
   },
   {
     name: "8h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Electricity price": 0.07,
+    "Average electricity price": 0.1
   },
   {
     name: "9h",
-    "Energy price": 0.08,
-    "Average energy price": 0.1
+    "Electricity price": 0.08,
+    "Average electricity price": 0.1
   },
   {
     name: "10h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "11h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Electricity price": 0.13,
+    "Average electricity price": 0.1
   },
   {
     name: "12h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "13h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Electricity price": 0.09,
+    "Average electricity price": 0.1
   },
   {
     name: "14h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Electricity price": 0.07,
+    "Average electricity price": 0.1
   },
   {
     name: "15h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Electricity price": 0.07,
+    "Average electricity price": 0.1
   },
   {
     name: "16h",
-    "Energy price": 0.08,
-    "Average energy price": 0.1
+    "Electricity price": 0.08,
+    "Average electricity price": 0.1
   },
   {
     name: "17h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "18h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Electricity price": 0.13,
+    "Average electricity price": 0.1
   },
   {
     name: "19h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "20h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Electricity price": 0.09,
+    "Average electricity price": 0.1
   },
   {
     name: "21h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Electricity price": 0.13,
+    "Average electricity price": 0.1
   },
   {
     name: "22h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Electricity price": 0.1,
+    "Average electricity price": 0.1
   },
   {
     name: "23h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Electricity price": 0.09,
+    "Average electricity price": 0.1
   }
 ];
 
@@ -200,11 +200,15 @@ class HomePage extends React.Component {
             <Legend />
             {/* <Line
               type="monotone"
-              dataKey="Average energy price"
+              dataKey="Average electricity price"
               stroke="#8884d8"
               activeDot={{ r: 8 }}
             /> */}
-            <Line type="monotone" dataKey="Energy price" stroke="#82ca9d" />
+            <Line
+              type="monotone"
+              dataKey="Electricity price"
+              stroke="#82ca9d"
+            />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -217,7 +221,7 @@ class HomePage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Overview</h1>
-        <CardComponent>
+        <CardComponent titleText="Electricity price graphic" className="pb-3">
           <ConsumptionChart />
         </CardComponent>
         <Row>

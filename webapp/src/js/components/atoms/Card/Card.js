@@ -20,7 +20,7 @@ export default class CardComponent extends Component {
           noMargin ? "m-0" : ""
         } ${className}`}
       >
-        {!!titleIcon && !!titleText ? (
+        {!!titleIcon || !!titleText ? (
           <div className="card-title">
             {!!titleIcon && (
               <img src={titleIcon} height="50" alt="placeholder" />

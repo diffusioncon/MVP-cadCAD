@@ -6,7 +6,7 @@ import RegularLayout from "../../layouts/RegularLayout/RegularLayout";
 
 import "./BuyPage.css";
 import CardComponent from "../../atoms/Card/Card";
-import { Form, Col, Row, InputGroup, Button } from "react-bootstrap";
+import { Form, Col, Row, InputGroup } from "react-bootstrap";
 
 import { QRCode } from "react-qr-svg";
 

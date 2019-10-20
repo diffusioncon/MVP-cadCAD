@@ -26,8 +26,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    document.title = process.env.REACT_APP_COMPANY_NAME;
-
     this.setState({ loading: false });
   }
 

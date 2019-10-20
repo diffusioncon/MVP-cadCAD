@@ -62,7 +62,9 @@ class DonatorsPage extends React.Component {
           </Col>
           <Col>{company}</Col>
           <Col>{create_at}</Col>
-          <Col>${invested}</Col>
+          <Col style={{ color: "#38bb8d" }}>
+            <strong>${invested}</strong>
+          </Col>
         </Row>
       </CardComponent>
     ));

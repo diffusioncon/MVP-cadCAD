@@ -139,7 +139,12 @@ class ConsumptionPage extends React.Component {
         return (
           <div style={{ width: "100%", height: 300 }}>
             <ResponsiveContainer>
-              <LineChart data={newChart1}>
+              <LineChart
+                data={newChart1}
+                margin={{
+                  top: 20
+                }}
+              >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis unit="KW" />
@@ -205,7 +210,9 @@ class ConsumptionPage extends React.Component {
                 onClick={() => {
                   this.setState({ graphType: 1 });
                 }}
-                className="mr-2"
+                className={`mr-2 ${
+                  this.state.graphType !== 1 ? " disabled" : ""
+                }`}
               >
                 Consumption over time
               </Button>
@@ -213,6 +220,7 @@ class ConsumptionPage extends React.Component {
                 onClick={() => {
                   this.setState({ graphType: 2 });
                 }}
+                className={`${this.state.graphType !== 2 ? "disabled" : ""}`}
               >
                 Total consumed
               </Button>

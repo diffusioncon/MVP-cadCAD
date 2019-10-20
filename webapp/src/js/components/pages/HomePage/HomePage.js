@@ -192,7 +192,12 @@ class HomePage extends React.Component {
     return (
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
-          <LineChart data={chartData}>
+          <LineChart
+            data={chartData}
+            margin={{
+              top: 20
+            }}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis unit="$" />

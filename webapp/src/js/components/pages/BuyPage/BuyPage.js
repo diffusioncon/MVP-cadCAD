@@ -91,6 +91,7 @@ class BuyPage extends React.Component {
                 <InputGroup>
                   <Form.Control
                     autoComplete="off"
+                    min="0"
                     type="number"
                     onChange={this.handleChange}
                     placeholder={`Please enter the electricity amount ${
@@ -110,7 +111,7 @@ class BuyPage extends React.Component {
                 </InputGroup>
               </Form.Group>
               <Form.Group>
-                <Form.Label>You will get estimate:</Form.Label>
+                <Form.Label>Estimated value</Form.Label>
                 <InputGroup>
                   <Form.Control
                     disabled

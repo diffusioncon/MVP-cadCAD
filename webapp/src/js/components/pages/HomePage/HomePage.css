@@ -35,7 +35,9 @@ input[type="color"]:focus,
 .uneditable-input:focus {
   box-shadow: none;
 }
-.btn-primary {
+.btn-primary,
+.btn-primary.disabled,
+.btn-primary:disabled {
   background-color: #429798;
   border-color: #429798;
 }

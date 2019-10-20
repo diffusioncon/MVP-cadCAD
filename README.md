@@ -2,9 +2,9 @@
 ## Connect2Evolve | Token Engineering Challenge
 
 Important Links
-- 
-- 
--
+- [Presentation](https://docs.google.com/presentation/d/1iW_9ms3abJFhDMRLYhfLonLCMoSFRQE2xm5a80e-TWc/present?#slide=id.p)
+- [Token Modeling Canvas](https://docs.google.com/document/d/1VXCrX8HhSM2f3-EehgPPxeWY33O61-QISRfmCJeneTE/edit?usp=sharing)
+- [UI Dashboard](http://diffusion.mvpworkshop.co)
 
 ## Inspiration
 Our inspiration was the purpose and positive impact of the #Connect2Evolve project that aims to use innovative technology and help the people in one of the least developed parts of the words. The chance to come up with a solution that will enable maximal utilization of the necessary equipment that now is available to those people in need is something that has driven us to come up with this solution.
@@ -42,7 +42,13 @@ We learned that it is really important to design a token system in order to work
 
 ![Public Dashboard Home Screen](/screenshots/1_Home.png)
 
-![Public Dashboard My Installations](/screenshots/2_MyInstallations.png)
+![Public Dashboard Battery Overview](/screenshots/2_BatteryOverview.png)
 
-![Public Dashboard Explore](/screenshots/3_Explore.png)
+![Public Dashboard Electricity Production](/screenshots/3_Production.png)
+
+![Public Dashboard Electricity Consumption](/screenshots/4_Consumption.png)
+
+![Public Dashboard Buy Tokens](/screenshots/5_Buy.png)
+
+![Public Dashboard Impact Token Overview](/screenshots/6_ImpactToken.png)
 

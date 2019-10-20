@@ -71,7 +71,16 @@ class DonatorsPage extends React.Component {
 
   render() {
     const DonatorsList = this.renderDonators;
-
+    let calculation = JSON.stringify(allDonators);
+    calculation = JSON.parse(calculation).map(donator => {
+      donator.invested = donator.invested / 5000 / 2;
+      return donator;
+    });
+    calculation.push(
+      {
+        name: "Householders",
+        invested: 50
+      })
     return (
       <RegularLayout>
         <h1 className="mb-4">Donators</h1>
@@ -82,11 +91,11 @@ class DonatorsPage extends React.Component {
                 <Pie
                   dataKey="invested"
                   isAnimationActive={false}
-                  data={allDonators}
+                  data={calculation}
                   fill="#38bb8d"
                   label
                 >
-                  {allDonators.map((entry, index) => (
+                  {calculation.map((entry, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}

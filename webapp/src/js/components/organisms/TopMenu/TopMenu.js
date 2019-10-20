@@ -32,7 +32,7 @@ class TopMenu extends Component {
             <Navbar.Collapse className="justify-content-end">
               <Nav>
                 <Link className={this.getClassNames("/")} to="/">
-                  Overview
+                  Home
                 </Link>
                 <Link className={this.getClassNames("/battery")} to="/battery">
                   Battery level

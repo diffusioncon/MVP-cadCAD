@@ -10,9 +10,11 @@
 }
 .card .card-title span {
   margin-left: 10px;
-  color: #2e384d;
+  color: #8798ad;
+  font-weight: bold;
   border-bottom: 3px solid transparent;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 a .card:hover .card-title span {
   color: #38bb8d;

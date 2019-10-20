@@ -21,122 +21,122 @@ const chartData = [
   {
     name: "0h",
     "Battery level": 25,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "1h",
     "Battery level": 27,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "2h",
     "Battery level": 29,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "3h",
     "Battery level": 30,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "4h",
     "Battery level": 33,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "5h",
     "Battery level": 37,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "6h",
     "Battery level": 39,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "7h",
     "Battery level": 40,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "8h",
     "Battery level": 45,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "9h",
     "Battery level": 50,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "10h",
     "Battery level": 65,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "11h",
     "Battery level": 78,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "12h",
     "Battery level": 87,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "13h",
     "Battery level": 100,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "14h",
     "Battery level": 100,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "15h",
     "Battery level": 100,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "16h",
     "Battery level": 95,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "17h",
     "Battery level": 80,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "18h",
     "Battery level": 75,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "19h",
     "Battery level": 60,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "20h",
     "Battery level": 60,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "21h",
     "Battery level": 55,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "22h",
     "Battery level": 50,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   },
   {
     name: "23h",
     "Battery level": 30,
-    "Max battery capacity": 100
+    "Battery capacity": 100
   }
 ];
 
@@ -160,7 +160,7 @@ class BatteryPage extends React.Component {
             <Legend />
             <Line
               type="monotone"
-              dataKey="Max battery capacity"
+              dataKey="Battery capacity"
               stroke="#8884d8"
               activeDot={{ r: 8 }}
             />
@@ -177,7 +177,7 @@ class BatteryPage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Battery level</h1>
-        <CardComponent>
+        <CardComponent titleText="Battery level percentage" className="pb-3">
           <ConsumptionChart />
         </CardComponent>
       </RegularLayout>

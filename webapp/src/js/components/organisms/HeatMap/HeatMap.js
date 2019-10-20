@@ -31,16 +31,19 @@ class HeatMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: "400px", width: "100%" }}>
+      <div
+        style={{
+          height: "400px",
+          width: "100%"
+        }}
+      >
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyByaL2JekW-uKMcHKTGJGVB3V7Zd6NfAKg" }}
           defaultCenter={this.props.center}
           heatmapLibrary={true}
           heatmap={heatMapData}
           defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
-        </GoogleMapReact>
+        />
       </div>
     );
   }

@@ -43,7 +43,7 @@ const chartData = [
   },
   {
     name: "4h",
-    "Electricity price": 0.13,
+    "Electricity price": 0.1,
     "Average electricity price": 0.1
   },
   {
@@ -73,37 +73,37 @@ const chartData = [
   },
   {
     name: "10h",
-    "Electricity price": 0.1,
+    "Electricity price": 0.065,
     "Average electricity price": 0.1
   },
   {
     name: "11h",
-    "Electricity price": 0.13,
+    "Electricity price": 0.05,
     "Average electricity price": 0.1
   },
   {
     name: "12h",
-    "Electricity price": 0.1,
+    "Electricity price": 0.06,
     "Average electricity price": 0.1
   },
   {
     name: "13h",
-    "Electricity price": 0.09,
+    "Electricity price": 0.05,
     "Average electricity price": 0.1
   },
   {
     name: "14h",
-    "Electricity price": 0.07,
+    "Electricity price": 0.05,
     "Average electricity price": 0.1
   },
   {
     name: "15h",
-    "Electricity price": 0.07,
+    "Electricity price": 0.06,
     "Average electricity price": 0.1
   },
   {
     name: "16h",
-    "Electricity price": 0.08,
+    "Electricity price": 0.07,
     "Average electricity price": 0.1
   },
   {
@@ -113,7 +113,7 @@ const chartData = [
   },
   {
     name: "18h",
-    "Electricity price": 0.13,
+    "Electricity price": 0.1,
     "Average electricity price": 0.1
   },
   {
@@ -123,7 +123,7 @@ const chartData = [
   },
   {
     name: "20h",
-    "Electricity price": 0.09,
+    "Electricity price": 0.11,
     "Average electricity price": 0.1
   },
   {

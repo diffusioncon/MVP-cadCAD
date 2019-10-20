@@ -21,123 +21,123 @@ import CardComponent from "../../atoms/Card/Card";
 const chartData = [
   {
     name: "0h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity production": 9,
+    "Average electricity production": 0.1
   },
   {
     name: "1h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity production": 8.7,
+    "Average electricity production": 0.1
   },
   {
     name: "2h",
-    "Electricity price": 0.08,
-    "Average electricity price": 0.1
+    "Electricity production": 9,
+    "Average electricity production": 0.1
   },
   {
     name: "3h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 8.6,
+    "Average electricity production": 0.1
   },
   {
     name: "4h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity production": 8.5,
+    "Average electricity production": 0.1
   },
   {
     name: "5h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 9.1,
+    "Average electricity production": 0.1
   },
   {
     name: "6h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity production": 9.8,
+    "Average electricity production": 0.1
   },
   {
     name: "7h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity production": 10.5,
+    "Average electricity production": 0.1
   },
   {
     name: "8h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity production": 12.5,
+    "Average electricity production": 0.1
   },
   {
     name: "9h",
-    "Electricity price": 0.08,
-    "Average electricity price": 0.1
+    "Electricity production": 15.5,
+    "Average electricity production": 0.1
   },
   {
     name: "10h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 16.6,
+    "Average electricity production": 0.1
   },
   {
     name: "11h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity production": 20.5,
+    "Average electricity production": 0.1
   },
   {
     name: "12h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 22.5,
+    "Average electricity production": 0.1
   },
   {
     name: "13h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity production": 24.5,
+    "Average electricity production": 0.1
   },
   {
     name: "14h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity production": 24.5,
+    "Average electricity production": 0.1
   },
   {
     name: "15h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity production": 26.5,
+    "Average electricity production": 0.1
   },
   {
     name: "16h",
-    "Electricity price": 0.08,
-    "Average electricity price": 0.1
+    "Electricity production": 26.4,
+    "Average electricity production": 0.1
   },
   {
     name: "17h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 27,
+    "Average electricity production": 0.1
   },
   {
     name: "18h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity production": 25,
+    "Average electricity production": 0.1
   },
   {
     name: "19h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 22,
+    "Average electricity production": 0.1
   },
   {
     name: "20h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity production": 20,
+    "Average electricity production": 0.1
   },
   {
     name: "21h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity production": 16,
+    "Average electricity production": 0.1
   },
   {
     name: "22h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity production": 13,
+    "Average electricity production": 0.1
   },
   {
     name: "23h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity production": 11,
+    "Average electricity production": 0.1
   }
 ];
 
@@ -161,13 +161,13 @@ class ProductionPage extends React.Component {
             <Legend />
             {/* <Line
               type="monotone"
-              dataKey="Average electricity price"
+              dataKey="Average electricity production"
               stroke="#8884d8"
               activeDot={{ r: 8 }}
             /> */}
             <Line
               type="monotone"
-              dataKey="Electricity price"
+              dataKey="Electricity production"
               stroke="#82ca9d"
             />
           </LineChart>

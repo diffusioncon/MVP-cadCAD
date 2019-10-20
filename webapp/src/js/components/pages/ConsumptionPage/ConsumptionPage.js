@@ -21,123 +21,123 @@ import HeatMap from "../../organisms/HeatMap/HeatMap";
 const chartData = [
   {
     name: "0h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity consumption": 8,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "1h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity consumption": 9,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "2h",
-    "Electricity price": 0.08,
-    "Average electricity price": 0.1
+    "Electricity consumption": 8.7,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "3h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 6,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "4h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity consumption": 7,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "5h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 8,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "6h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity consumption": 9,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "7h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity consumption": 11,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "8h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity consumption": 14,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "9h",
-    "Electricity price": 0.08,
-    "Average electricity price": 0.1
+    "Electricity consumption": 15,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "10h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 16,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "11h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity consumption": 19,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "12h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 20,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "13h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity consumption": 21,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "14h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity consumption": 22,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "15h",
-    "Electricity price": 0.07,
-    "Average electricity price": 0.1
+    "Electricity consumption": 23,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "16h",
-    "Electricity price": 0.08,
-    "Average electricity price": 0.1
+    "Electricity consumption": 23,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "17h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 24,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "18h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity consumption": 26,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "19h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 24,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "20h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity consumption": 25,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "21h",
-    "Electricity price": 0.13,
-    "Average electricity price": 0.1
+    "Electricity consumption": 23,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "22h",
-    "Electricity price": 0.1,
-    "Average electricity price": 0.1
+    "Electricity consumption": 24,
+    "Average Electricity consumption": 0.1
   },
   {
     name: "23h",
-    "Electricity price": 0.09,
-    "Average electricity price": 0.1
+    "Electricity consumption": 15,
+    "Average Electricity consumption": 0.1
   }
 ];
 class ConsumptionPage extends React.Component {
@@ -160,13 +160,13 @@ class ConsumptionPage extends React.Component {
             <Legend />
             {/* <Line
               type="monotone"
-              dataKey="Average electricity price"
+              dataKey="Average Electricity consumption"
               stroke="#8884d8"
               activeDot={{ r: 8 }}
             /> */}
             <Line
               type="monotone"
-              dataKey="Electricity price"
+              dataKey="Electricity consumption"
               stroke="#82ca9d"
             />
           </LineChart>

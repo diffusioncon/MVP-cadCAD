@@ -32,7 +32,7 @@ class TopMenu extends Component {
             <Navbar.Collapse className="justify-content-end">
               <Nav>
                 <Link className={this.getClassNames("/")} to="/">
-                  Overview
+                  Home
                 </Link>
                 <Link className={this.getClassNames("/battery")} to="/battery">
                   Battery level
@@ -53,10 +53,10 @@ class TopMenu extends Component {
                   Buy
                 </Link>
                 <Link
-                  className={this.getClassNames("/donators")}
-                  to="/donators"
+                  className={this.getClassNames("/token")}
+                  to="/token"
                 >
-                  Donators
+                  Impact token
                 </Link>
               </Nav>
             </Navbar.Collapse>

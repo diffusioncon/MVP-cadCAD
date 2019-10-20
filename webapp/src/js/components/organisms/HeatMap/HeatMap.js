@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
 const heatMapData = {
   positions: [
     { lat: 52.4852243, lng: 13.4180641 },

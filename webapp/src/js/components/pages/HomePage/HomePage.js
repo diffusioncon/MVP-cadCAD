@@ -220,8 +220,8 @@ class HomePage extends React.Component {
 
     return (
       <RegularLayout>
-        <h1 className="mb-4">Overview</h1>
-        <CardComponent titleText="Electricity price graphic" className="pb-3">
+        <h1 className="mb-4">Homepage</h1>
+        <CardComponent titleText="Price of the kWh (last 24 hours)" className="pb-3">
           <ConsumptionChart />
         </CardComponent>
         <Row>

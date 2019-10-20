@@ -182,14 +182,14 @@ class ProductionPage extends React.Component {
     return (
       <RegularLayout>
         <h1 className="mb-4">Electricity production</h1>
-        <CardComponent titleText="Electricity produce graphic" className="pb-3">
+        <CardComponent titleText="Electricity produced (last 24 hours)" className="pb-3">
           <ConsumptionChart />
         </CardComponent>
         <Row>
           <Col className="mb-4" sm="12" md="6" lg="4">
             <CardComponent
               titleIcon={require("../../../../assets/icons/adding-solar-inactive.png")}
-              titleText="Max production"
+              titleText="Max daily production"
             >
               <br />
               <br />

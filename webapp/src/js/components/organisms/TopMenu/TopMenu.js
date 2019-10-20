@@ -53,10 +53,10 @@ class TopMenu extends Component {
                   Buy
                 </Link>
                 <Link
-                  className={this.getClassNames("/donators")}
-                  to="/donators"
+                  className={this.getClassNames("/token")}
+                  to="/token"
                 >
-                  Donators
+                  Impact token
                 </Link>
               </Nav>
             </Navbar.Collapse>

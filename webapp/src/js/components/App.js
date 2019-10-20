@@ -39,7 +39,7 @@ class App extends Component {
         <GuestUserRoute exact path="/production" component={ProductionPage} />
         <GuestUserRoute exact path="/consumption" component={ConsumptionPage} />
         <GuestUserRoute exact path="/buy" component={BuyPage} />
-        <GuestUserRoute exact path="/donators" component={DonatorsPage} />
+        <GuestUserRoute exact path="/token" component={DonatorsPage} />
 
         {/* <AuthUserRoute exact path='/profile' component={ProfilePage} /> */}
         <Route component={SomethingWentWrong} />

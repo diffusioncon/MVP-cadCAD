@@ -32,10 +32,11 @@ We are proud that we design a system that allows:
 We learned that it is really important to design a token system in order to work together with people’s daily habits. This way we can make a token system and token model that is totally usable in world use cases.
 
 ## What’s next for  MVP
--Fundraising Platform
--Government Relations
--Third-Party API integration (expand token simulation models, e.g. weather forecast)
--Infrastructure & Equipment Installation
+
+- Fundraising Platform
+- Government Relations
+- Third-Party API integration (expand token simulation models, e.g. weather forecast)
+- Infrastructure & Equipment Installation
 
 ## Public Dashboard 
 

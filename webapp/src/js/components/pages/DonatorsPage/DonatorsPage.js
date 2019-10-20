@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 import * as appActions from "../../../redux/actions";
 import RegularLayout from "../../layouts/RegularLayout/RegularLayout";
 
-import "./ConsumptionPage.css";
+import "./DonatorsPage.css";
 import {
   LineChart,
   Line,
@@ -16,131 +16,131 @@ import {
   ResponsiveContainer
 } from "recharts";
 import CardComponent from "../../atoms/Card/Card";
-import HeatMap from "../../organisms/HeatMap/HeatMap";
 
 const chartData = [
   {
     name: "0h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Battery level": 25,
+    "Max battery capacity": 100
   },
   {
     name: "1h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Battery level": 27,
+    "Max battery capacity": 100
   },
   {
     name: "2h",
-    "Energy price": 0.08,
-    "Average energy price": 0.1
+    "Battery level": 29,
+    "Max battery capacity": 100
   },
   {
     name: "3h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 30,
+    "Max battery capacity": 100
   },
   {
     name: "4h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Battery level": 33,
+    "Max battery capacity": 100
   },
   {
     name: "5h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 37,
+    "Max battery capacity": 100
   },
   {
     name: "6h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Battery level": 39,
+    "Max battery capacity": 100
   },
   {
     name: "7h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Battery level": 40,
+    "Max battery capacity": 100
   },
   {
     name: "8h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Battery level": 45,
+    "Max battery capacity": 100
   },
   {
     name: "9h",
-    "Energy price": 0.08,
-    "Average energy price": 0.1
+    "Battery level": 50,
+    "Max battery capacity": 100
   },
   {
     name: "10h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 65,
+    "Max battery capacity": 100
   },
   {
     name: "11h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Battery level": 78,
+    "Max battery capacity": 100
   },
   {
     name: "12h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 87,
+    "Max battery capacity": 100
   },
   {
     name: "13h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Battery level": 100,
+    "Max battery capacity": 100
   },
   {
     name: "14h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Battery level": 100,
+    "Max battery capacity": 100
   },
   {
     name: "15h",
-    "Energy price": 0.07,
-    "Average energy price": 0.1
+    "Battery level": 100,
+    "Max battery capacity": 100
   },
   {
     name: "16h",
-    "Energy price": 0.08,
-    "Average energy price": 0.1
+    "Battery level": 95,
+    "Max battery capacity": 100
   },
   {
     name: "17h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 80,
+    "Max battery capacity": 100
   },
   {
     name: "18h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Battery level": 75,
+    "Max battery capacity": 100
   },
   {
     name: "19h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 60,
+    "Max battery capacity": 100
   },
   {
     name: "20h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Battery level": 60,
+    "Max battery capacity": 100
   },
   {
     name: "21h",
-    "Energy price": 0.13,
-    "Average energy price": 0.1
+    "Battery level": 55,
+    "Max battery capacity": 100
   },
   {
     name: "22h",
-    "Energy price": 0.1,
-    "Average energy price": 0.1
+    "Battery level": 50,
+    "Max battery capacity": 100
   },
   {
     name: "23h",
-    "Energy price": 0.09,
-    "Average energy price": 0.1
+    "Battery level": 30,
+    "Max battery capacity": 100
   }
 ];
-class ConsumptionPage extends React.Component {
+
+class DonatorsPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -158,13 +158,13 @@ class ConsumptionPage extends React.Component {
             <YAxis />
             <Tooltip />
             <Legend />
-            {/* <Line
+            <Line
               type="monotone"
-              dataKey="Average energy price"
+              dataKey="Max battery capacity"
               stroke="#8884d8"
               activeDot={{ r: 8 }}
-            /> */}
-            <Line type="monotone" dataKey="Energy price" stroke="#82ca9d" />
+            />
+            <Line type="monotone" dataKey="Battery level" stroke="#82ca9d" />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -176,14 +176,10 @@ class ConsumptionPage extends React.Component {
 
     return (
       <RegularLayout>
-        <h1 className="mb-4">Community usage</h1>
+        <h1 className="mb-4">Battery level</h1>
         <CardComponent>
           <ConsumptionChart />
         </CardComponent>
-        <br />
-        <br />
-        <h1 className="mb-4">Consumption heatmap</h1>
-        <HeatMap />
       </RegularLayout>
     );
   }
@@ -200,4 +196,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ConsumptionPage);
+)(DonatorsPage);

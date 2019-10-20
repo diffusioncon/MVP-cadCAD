@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as appActions from "../../../redux/actions";
 import RegularLayout from "../../layouts/RegularLayout/RegularLayout";
-import CreateReactClass from "create-react-class";
 
 import "./BatteryPage.css";
 import {
@@ -16,8 +15,6 @@ import {
   Legend,
   ResponsiveContainer
 } from "recharts";
-import Gauge from "svg-gauge";
-import { Col, Row } from "react-bootstrap";
 import CardComponent from "../../atoms/Card/Card";
 
 const chartData = [

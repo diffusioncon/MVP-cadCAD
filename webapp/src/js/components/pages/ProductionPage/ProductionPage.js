@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as appActions from "../../../redux/actions";
 import RegularLayout from "../../layouts/RegularLayout/RegularLayout";
-import CreateReactClass from "create-react-class";
 
 import "./ProductionPage.css";
 import {
@@ -16,7 +15,6 @@ import {
   Legend,
   ResponsiveContainer
 } from "recharts";
-import Gauge from "svg-gauge";
 import { Col, Row } from "react-bootstrap";
 import CardComponent from "../../atoms/Card/Card";
 
@@ -142,43 +140,6 @@ const chartData = [
     "Average energy price": 0.1
   }
 ];
-
-const defaultOptions = {
-  animDuration: 1,
-  showValue: true,
-  max: 100,
-  dialStartAngle: 180,
-  dialEndAngle: 0,
-  label: val => val + "%",
-  color: val => "#F9D477"
-};
-
-const BateryDiagram = CreateReactClass({
-  displayName: "Gauge",
-  componentDidMount() {
-    this.renderGauge(this.props);
-  },
-
-  shouldComponentUpdate(nextProps, nextState) {
-    const { props } = this;
-    if (props.value !== nextProps.value) {
-      this.renderGauge(nextProps);
-    }
-    return false;
-  },
-
-  render() {
-    return <div className="gauge-container" ref={el => (this.gaugeEl = el)} />;
-  },
-
-  renderGauge(props) {
-    const gaugeOptions = Object.assign({}, defaultOptions, props);
-    if (!this.gauge) {
-      this.gauge = Gauge(this.gaugeEl, gaugeOptions);
-    }
-    this.gauge.setValueAnimated(props.value, gaugeOptions.animDuration);
-  }
-});
 
 class ProductionPage extends React.Component {
   constructor(props) {

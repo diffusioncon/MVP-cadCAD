@@ -3,6 +3,15 @@ body {
   font-family: Rubik;
   color: #2e384d;
 }
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus,
+.form-control:focus {
+  outline: 0 !important;
+  box-shadow: none;
+}
 h1 {
   font-size: 28px;
   font-weight: 300;

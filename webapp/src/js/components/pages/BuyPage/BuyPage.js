@@ -77,8 +77,6 @@ class BuyPage extends React.Component {
                     Please select a coin
                   </option>
                   {Object.keys(allCoins).map(key => {
-                    console.log(allCoins);
-
                     const coin = allCoins[key];
                     return (
                       <option key={coin.value} value={coin.value}>
